@@ -1,0 +1,28 @@
+[flake8]
+max-line-length = 100
+pytest-parametrize-values-type=tuple
+
+exclude =
+	.git,
+	__pycache__,
+	build,
+	dist,
+
+ignore =
+    W503,C812,SIM106,CCR001,R503,
+    ANN101, # Missing type annotation for self in method
+    ANN102, # Missing type annotation for cls in classmethod
+    ANN002, # Missing type annotation for *args
+    ANN003, # Missing type annotation for **kwargs
+    ANN401,
+    E501,
+
+
+accept-encodings = utf-8,utf-16
+no-accept-encodings = True
+
+inline-quotes = "
+
+classmethod-decorators =
+    classmethod
+    validator

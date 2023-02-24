@@ -1,0 +1,14 @@
+.idea/
+.env
+.env.prod
+
+.pytest_cache/
+__pycache__/
+src/mediafiles/*
+src/staticfiles/*
+!src/mediafiles/.gitkeep
+!src/staticfiles/.gitkeep
+
+static_volume/
+media_volume/
+firebase-sdk.json
